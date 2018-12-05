@@ -1,0 +1,11 @@
+__pycache__
+*.py[co]
+/*.egg-info
+*.srctrlbm
+*.srctrldb
+build
+dist
+.eggs
+monkeytype.sqlite3
+/tests/testSavedDataRootDir
+/.ipynb_checkpoints

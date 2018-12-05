@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "wheel", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urm"
+description = "Unrelational mapper. Saves and loads data not only from key-value storages."
+readme = "ReadMe.md"
+authors = [{name = "KOLANICH"}]
+license = {text = "Unlicense"}
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: Public Domain",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["urm"]
+urls = {Homepage = "https://codeberg.org/KOLANICH-libs/urm.py"}
+requires-python = ">=3.4"
+dependencies = [
+	"transformerz", # @ git+https://codeberg.org/KOLANICH-libs/transformerz.py.git
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["urm"]
+zip-safe = true
+include-package-data = false
+
+[tool.setuptools_scm]
